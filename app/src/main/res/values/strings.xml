@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tumblr Tenmiles</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="avatar">Avatar</string>
+    <string name="postTitle">Post Title</string>
+    <string name="postBody">Post Body</string>
+    <string name="add_new_post">Add New Post</string>
+    <string name="cancel">Cancel</string>
+    <string name="post">Post</string>
+    <string name="post_it">Post it</string>
+</resources>

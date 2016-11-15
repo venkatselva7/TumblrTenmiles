@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:padding="@dimen/margin_small"
+        android:text="@string/add_new_post"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/semi_large"
+        android:textStyle="bold" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_small">
+
+        <EditText
+            android:id="@+id/et_post_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/postTitle" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_small">
+
+        <EditText
+            android:id="@+id/et_post_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/postBody" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium">
+
+        <Button
+            android:id="@+id/btn_post_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_high"
+            android:layout_marginRight="@dimen/margin_high"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_post"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_high"
+            android:layout_marginRight="@dimen/margin_high"
+            android:layout_weight="1"
+            android:text="@string/post_it"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>
