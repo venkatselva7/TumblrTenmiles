@@ -61,6 +61,7 @@ public class PostFragment extends Fragment {
     FragmentIntermediateInterface fragmentIntermediateInterface;
     View rootView;
     boolean isFirstRun = true;
+    private boolean isImageLoaded = true;
 
     public static PostFragment newInstance(String selectedBlogUrl) {
         PostFragment helpFragment = new PostFragment();
@@ -78,7 +79,7 @@ public class PostFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater,ViewGroup container,Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.activity_post, container, false);
         context = getActivity();
         prefUtil = new PrefUtil(context);
@@ -166,10 +167,7 @@ public class PostFragment extends Fragment {
     }
 
     private void loadPost() {
-        try {
-            progressDialog = ProgressDialog.show(context, "Please wait", "Loading", true);
-        } catch (Exception e) {
-        }
+        progressDialog = ProgressDialog.show(context, "Please wait", "Loading", true);
         new LoadPostTask().execute();
     }
 
@@ -206,23 +204,29 @@ public class PostFragment extends Fragment {
                 blog = client.blogInfo(getArguments().getString(Config.SELECTED_BLOG_URL));
                 isFirstRun = false;
             }
-            List<Post> listPost = blog.posts();
             ArrayList<BlogPostDetail> listPostDetails = new ArrayList<>();
-            for (int j = 0; j < listPost.size(); j++) {
-                Post post = listPost.get(j);
-                if (post.getType().equals("text")) {
-                    TextPost textPost = (TextPost) post;
-                    BlogPostDetail blogPostDetail = new BlogPostDetail();
-                    blogPostDetail.setPostTitle(textPost.getTitle());
-                    blogPostDetail.setBlogName(blog.getName());
-                    blogPostDetail.setBlogAvatar(blog.avatar());
-                    blogPostDetail.setPostBody(textPost.getBody());
-                    blogPostDetail.setPostDate(textPost.getDateGMT());
-                    listPostDetails.add(blogPostDetail);
+            try {
+                List<Post> listPost = blog.posts();
+                for (int j = 0; j < listPost.size(); j++) {
+                    Post post = listPost.get(j);
+                    if (post.getType().equals("text")) {
+                        TextPost textPost = (TextPost) post;
+                        BlogPostDetail blogPostDetail = new BlogPostDetail();
+                        blogPostDetail.setPostTitle(textPost.getTitle());
+                        blogPostDetail.setBlogName(blog.getName());
+                        if (isImageLoaded)
+                            blogPostDetail.setBlogAvatar(blog.avatar());
+                        blogPostDetail.setPostBody(textPost.getBody());
+                        blogPostDetail.setPostDate(textPost.getDateGMT());
+                        listPostDetails.add(blogPostDetail);
+                    }
                 }
+                outerListPostDetails = listPostDetails;
+                blogPostAdapter = new BlogPostAdapter(context, listPostDetails);
+            } catch (Exception e) {
+                isImageLoaded = false;
+                return e.getMessage();
             }
-            outerListPostDetails = listPostDetails;
-            blogPostAdapter = new BlogPostAdapter(context, listPostDetails);
             if (listPostDetails.size() > 0) {
                 return "OK";
             } else {
@@ -232,17 +236,18 @@ public class PostFragment extends Fragment {
 
         @Override
         protected void onPostExecute(String result) {
-            try {
+            if (progressDialog.isShowing())
                 progressDialog.dismiss();
-            } catch (Exception e) {
-            }
             if (result.equals("OK")) {
                 rvPostList.setAdapter(blogPostAdapter);
-            } else {
+            } else if (result.equals("NO_POSTS")) {
                 if (!isFirstRun) {
                     rvPostList.setAdapter(blogPostAdapter);
                 }
                 Toast.makeText(context, "No posts", Toast.LENGTH_SHORT).show();
+            } else {
+                loadPost();
+                //  Toast.makeText(context, " Error " + result, Toast.LENGTH_SHORT).show();
             }
         }
     }

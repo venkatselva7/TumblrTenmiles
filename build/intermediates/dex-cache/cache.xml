@@ -12,12 +12,48 @@
     </item>
     <item
         is-multidex="false"
+        jar="E:\Temp\TumblrTenmilesTask\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="E:\Temp\TumblrTenmilesTask\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_0b55c80c6ea3ded34c4700aa52059f707a204548.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="E:\WS\TumblrTenmiles\app\build\intermediates\exploded-aar\com.android.support\design\25.0.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
         <dex dex="E:\WS\TumblrTenmiles\app\build\intermediates\pre-dexed\debug\com.android.support-design-25.0.0_f076f0f22f02a15bd1719109c655fbf8dda818b4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Temp\TumblrTenmilesTask\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="E:\Temp\TumblrTenmilesTask\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.0.0_c6d455311a18377abd51e2e54afcd289ca5583f8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Temp\TumblrTenmilesTask\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="E:\Temp\TumblrTenmilesTask\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.0.0_472614db0a1d83b2b29ecd15fb0fe670e465956a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Temp\TumblrTenmilesTask\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="E:\Temp\TumblrTenmilesTask\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.0.0_ec2702ea724ec9a064f3b47d3069c5c27650df99.jar" />
     </item>
     <item
         is-multidex="false"
@@ -45,6 +81,15 @@
         revision="25.0.0"
         sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
         <dex dex="E:\WS\TumblrTenmiles\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.0.0_a74127899889531c8f561f3353a238e1d689467d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Temp\TumblrTenmilesTask\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8a372c4191f80489770a231f7be4820b204b886a">
+        <dex dex="E:\Temp\TumblrTenmilesTask\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-25.0.0_528acc38ecfd040c2a1d7ecece4885d846cc6224.jar" />
     </item>
     <item
         is-multidex="false"
@@ -111,6 +156,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="E:\Temp\TumblrTenmilesTask\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="E:\Temp\TumblrTenmilesTask\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.0.0_50d9baef747ea17b8b717a478b70a2046558cefd.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="E:\WS\TumblrTenmiles\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -126,6 +180,24 @@
         revision="25.0.0"
         sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
         <dex dex="E:\WS\TumblrTenmiles\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.0.0_95a00b5a5788f99235b84e5db15387d5b1fa213b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Temp\TumblrTenmilesTask\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="E:\Temp\TumblrTenmilesTask\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_21ba1f849ef306806c5fdf7f61af4416860049a0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Temp\TumblrTenmilesTask\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="E:\Temp\TumblrTenmilesTask\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.0.0_753cf32f5db9e6ea7c27814304f16beefbc9afed.jar" />
     </item>
     <item
         is-multidex="false"
@@ -174,6 +246,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="E:\Temp\TumblrTenmilesTask\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="E:\Temp\TumblrTenmilesTask\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.0.0_b582cc2e5858f06a61708758647235a26cd97989.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="E:\WS\TumblrTenmiles\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.0.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -192,12 +273,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="E:\WS\TumblrTenmiles\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\jars\classes.jar"
+        jar="E:\Temp\TumblrTenmilesTask\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\libs\internal_impl-25.0.0.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
-        <dex dex="E:\WS\TumblrTenmiles\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.0.0_c9c9a54c6c1e46d8b8add70c22c1bc058c743b3d.jar" />
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="E:\Temp\TumblrTenmilesTask\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_6ada57c0b621e8d9f60473fa36b0249ec1a60210.jar" />
     </item>
     <item
         is-multidex="false"
@@ -207,6 +288,33 @@
         revision="25.0.0"
         sha1="1f96456ca233dec780aa224bff076d8e8bca3908">
         <dex dex="E:\WS\TumblrTenmiles\app\build\intermediates\pre-dexed\debug\gson-2.2.2_5bf6492b7ccd5fc4d88dd8afd22d1c15d509b8b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Temp\TumblrTenmilesTask\app\build\intermediates\exploded-aar\com.android.support\design\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
+        <dex dex="E:\Temp\TumblrTenmilesTask\app\build\intermediates\pre-dexed\debug\com.android.support-design-25.0.0_24d8dd7fcebd71e2154bea2d706f6e4aef5f0e08.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\WS\TumblrTenmiles\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="E:\WS\TumblrTenmiles\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.0.0_c9c9a54c6c1e46d8b8add70c22c1bc058c743b3d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Temp\TumblrTenmilesTask\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="E:\Temp\TumblrTenmilesTask\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.0.0_de039ccce10f66dd908a56deab3ef1ce5c0cf9d5.jar" />
     </item>
     <item
         is-multidex="false"
@@ -228,12 +336,48 @@
     </item>
     <item
         is-multidex="false"
+        jar="E:\Temp\TumblrTenmilesTask\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="E:\Temp\TumblrTenmilesTask\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_cf35b5c983094e467e754e325e30d2563cb721f8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Temp\TumblrTenmilesTask\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="E:\Temp\TumblrTenmilesTask\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_392cdcb612e0d04782566ad2e26041c7e4290047.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Temp\TumblrTenmilesTask\app\build\intermediates\exploded-aar\com.android.support\transition\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
+        <dex dex="E:\Temp\TumblrTenmilesTask\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.0.0_8dd5cbfafc77b63da50a99eeb7d4c3703c8a0098.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="E:\WS\TumblrTenmiles\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
         <dex dex="E:\WS\TumblrTenmiles\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.0.0_933abfb70dccd1e1169588419cc7e10b553a6ff3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Temp\TumblrTenmilesTask\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="E:\Temp\TumblrTenmilesTask\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.0.0_16138a4cdf7f8f0dffce10ce3a3eede422a3f0e8.jar" />
     </item>
     <item
         is-multidex="false"
@@ -246,12 +390,30 @@
     </item>
     <item
         is-multidex="false"
+        jar="E:\Temp\TumblrTenmilesTask\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="E:\Temp\TumblrTenmilesTask\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.0.0_ff33ad6bae60bc885154e8ebc64b903c54bdde57.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="E:\WS\TumblrTenmiles\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\libs\internal_impl-25.0.0.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
         <dex dex="E:\WS\TumblrTenmiles\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_0a8231cc2c1c4877e7d7af9b42f896040ebe98bd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Temp\TumblrTenmilesTask\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="E:\Temp\TumblrTenmilesTask\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.0.0_b384c0960bdceb56be6493ddfb89904313184e5a.jar" />
     </item>
 
 </items>

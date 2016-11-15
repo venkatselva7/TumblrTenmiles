@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements FragmentIntermedi
     ArrayList<UserBlog> outerListUserBlog;
     PostFragment postFragment;
     String userName;
+    boolean isImageLoaded = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -112,10 +113,7 @@ public class MainActivity extends AppCompatActivity implements FragmentIntermedi
     }
 
     public void getUsersBlogs() {
-        try {
-            progressDialog = ProgressDialog.show(context, "Please wait", "Loading", true);
-        } catch (Exception e) {
-        }
+        progressDialog = ProgressDialog.show(context, "Please wait", "Loading", true);
         new LoadBlogTask().execute();
     }
 
@@ -133,7 +131,9 @@ public class MainActivity extends AppCompatActivity implements FragmentIntermedi
             try {
                 for (int i = 0; i < user.getBlogs().size(); i++) {
                     userBlog = new UserBlog();
-                    userBlog.setBlogAvatar(user.getBlogs().get(i).avatar());
+                    if (isImageLoaded) {
+                        userBlog.setBlogAvatar(user.getBlogs().get(i).avatar());
+                    }
                     userBlog.setBlogName(user.getBlogs().get(i).getName());
                     userBlog.setBlogUrl(user.getBlogs().get(i).getName() + ".tumblr.com");
                     userBlog.setBlogTitle(user.getBlogs().get(i).getTitle());
@@ -141,6 +141,7 @@ public class MainActivity extends AppCompatActivity implements FragmentIntermedi
                 }
                 outerListUserBlog = listUserBlog;
             } catch (Exception e) {
+                isImageLoaded = false;
                 return e.getMessage();
             }
 
@@ -153,16 +154,14 @@ public class MainActivity extends AppCompatActivity implements FragmentIntermedi
 
         @Override
         protected void onPostExecute(String result) {
-            try {
-                progressDialog.dismiss();
-            } catch (Exception e) {
-            }
+            progressDialog.dismiss();
             if (result.equals("OK")) {
                 setBlogListFragmentPage(outerListUserBlog);
             } else if (result.equals("NO_BLOGS")) {
                 Toast.makeText(context, "some", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(context, " Error " + result, Toast.LENGTH_SHORT).show();
+                getUsersBlogs();
+               // Toast.makeText(context, " Error " + result, Toast.LENGTH_SHORT).show();
             }
         }
     }
